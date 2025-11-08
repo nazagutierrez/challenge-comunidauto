@@ -25,7 +25,7 @@ pnpm install
 
 ## Configuración de la Base de Datos
 
-1. Importar el archivo `dbComunidauto.sql` en tu editor de MySQL (Contiene creacion de db e inserts).
+1. Importar el archivo `dbComunidauto.sql` en tu editor de MySQL (Contiene creación de db e inserts).
 2. Configurar las credenciales de la base de datos en el archivo de configuración:
    - Copiar el archivo `.env.example` a `.env`
    - Modificar las variables de entorno con tus credenciales:

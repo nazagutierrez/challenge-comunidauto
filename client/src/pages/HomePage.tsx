@@ -80,7 +80,7 @@ export function HomePage() {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="h-screen noise-black flex items-center justify-center mx-auto px-4 py-8">
         <LoadingSpinner />
       </div>
     );
