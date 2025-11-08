@@ -84,3 +84,13 @@ pnpm run dev
 ## Consultas de Práctica
 
 En el archivo `consultasDeComunidauto.sql` encontrarás las consultas SQL que habian sido requeridas para el challenge.
+
+## 🖼️ Capturas de pantalla
+
+<p align="center">
+  <img src="/client/public/screenshots/comunidauto-screenshot.png" alt="Home" width="100%" />
+</p>
+
+<p align="center">
+  <img src="/client/public/screenshots/comunidauto-screenshot.png-2" alt="Cars" width="100%" />
+</p>
