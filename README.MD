@@ -92,5 +92,5 @@ En el archivo `consultasDeComunidauto.sql` encontrarás las consultas SQL que ha
 </p>
 
 <p align="center">
-  <img src="/client/public/screenshots/comunidauto-screenshot.png-2" alt="Cars" width="100%" />
+  <img src="/client/public/screenshots/comunidauto-screenshot-2.png" alt="Cars" width="100%" />
 </p>
