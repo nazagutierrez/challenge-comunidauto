@@ -78,14 +78,6 @@ export function HomePage() {
     setFilteredCars(result);
   };
 
-  if (loading) {
-    return (
-      <div className="h-screen noise-black flex items-center justify-center mx-auto px-4 py-8">
-        <LoadingSpinner />
-      </div>
-    );
-  }
-
 return (
   <div>
     <div className="w-full relative sm:h-[70vh] flex flex-col xl:flex-row items-center justify-start overflow-hidden">
@@ -140,24 +132,38 @@ return (
       />
     </div>
 
-      {filteredCars.length === 0 ? (
-        <div className="text-center flex flex-col items-center justify-start noise-black h-screen py-16 z-30">
-          <h3 className="text-6xl mb-4"><Car className='w-14 h-14 text-red-800' /></h3>
-          <h3 className="text-2xl font-bold mb-2">No se encontraron autos</h3>
-          <p className="text-neutral-300">Intenta ajustar los filtros para ver más resultados</p>
+      {loading ? (
+        <div className="flex justify-center items-center h-full noise-black">
+          <LoadingSpinner text="Cargando autos" />
         </div>
       ) : (
         <>
-          <div className="py-6 text-lg bg-red-800 main-font px-10">
-            Mostrando {filteredCars.length} de {cars.length} autos
-          </div>
-          <div className="flex justify-center  noise-black pb-20 pt-20 px-5 bg-neutral-800">
-            <div className='flex justify-center w-full flex-wrap gap-x-6 gap-y-10'>
-              {filteredCars.map((car) => (
-                <CarCard key={car.id} car={car} />
-              ))}
+          {filteredCars.length === 0 ? (
+            <div className="text-center flex flex-col items-center justify-start noise-black h-screen py-16 z-30">
+              <h3 className="text-6xl mb-4">
+                <Car className="w-14 h-14 text-red-800" />
+              </h3>
+              <h3 className="text-2xl font-bold mb-2">
+                No se encontraron autos
+              </h3>
+              <p className="text-neutral-300">
+                Intenta ajustar los filtros para ver más resultados
+              </p>
             </div>
-          </div>
+          ) : (
+            <>
+              <div className="py-6 text-lg bg-red-800 main-font px-10">
+                Mostrando {filteredCars.length} de {cars.length} autos
+              </div>
+              <div className="flex justify-center  noise-black pb-20 pt-20 px-5 bg-neutral-800">
+                <div className="flex justify-center w-full flex-wrap gap-x-6 gap-y-10">
+                  {filteredCars.map((car) => (
+                    <CarCard key={car.id} car={car} />
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
         </>
       )}
     </div>

@@ -55,9 +55,9 @@ export function CarDetailPage() {
       <div className="h-full">
         <button
           onClick={() => navigate('/')}
-          className="flex cursor-pointer absolute items-center gap-2 z-20 px-3 py-2 rounded-lg top-4 left-4 noise-red text-white hover transition-colors"
+          className="flex cursor-pointer absolute items-center gap-2 z-20 px-3 py-2 rounded-lg top-4 left-4 noise-red text-white group transition-colors"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <ArrowLeft className="w-4 h-4 group-hover:text-red-600 transition-all" />
           <span className="text-xl main-font">Volver al inicio</span>
         </button>
 
