@@ -142,7 +142,7 @@ return (
 
       {filteredCars.length === 0 ? (
         <div className="text-center flex flex-col items-center justify-start noise-black h-screen py-16 z-30">
-          <h3 className="text-6xl mb-4"><Car className='w-14 h-14' /></h3>
+          <h3 className="text-6xl mb-4"><Car className='w-14 h-14 text-red-800' /></h3>
           <h3 className="text-2xl font-bold mb-2">No se encontraron autos</h3>
           <p className="text-neutral-300">Intenta ajustar los filtros para ver más resultados</p>
         </div>

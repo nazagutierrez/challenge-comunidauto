@@ -6,6 +6,13 @@ Este repositorio contiene la prueba técnica realizada para un puesto en Comunid
 
 - React - TypeScript - Node.js  - Express.js - Vite - Tailwind CSS - Axios - MySQL.
 
+## Features
+
+- Diseño estético y responsive.  
+- Conectado a mi propia base de datos.  
+- Componentización y reutilización de componentes.  
+- Código claro y carpetas bien distribuidas.
+
 ## Instalación
 
 1. Clonar el repositorio:
