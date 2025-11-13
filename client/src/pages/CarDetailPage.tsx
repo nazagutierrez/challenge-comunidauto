@@ -23,7 +23,7 @@ export function CarDetailPage() {
   useEffect(() => {
     // Obtenemos los datos del auto
     setLoading(true);
-    axios.get("http://localhost:3000/cars/" + id).then((res) => {
+    axios.get(`http://localhost:${import.meta.env.VITE_SV_PORT}/cars/${id}`).then((res) => {
       setCar(res.data);
       console.log(res.data)
       setLoading(false);

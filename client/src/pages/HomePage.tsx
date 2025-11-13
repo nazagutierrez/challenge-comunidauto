@@ -12,7 +12,7 @@ export function HomePage() {
   useEffect(() => {
     // Obtenemos los datos de los autos
     setLoading(true);
-    axios.get("http://localhost:3000/cars").then((res) => {
+    axios.get(`http://localhost:${import.meta.env.VITE_SV_PORT}/cars`).then((res) => {
       setCars(res.data);
       setLoading(false);
     });
