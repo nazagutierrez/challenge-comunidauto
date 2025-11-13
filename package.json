@@ -1,0 +1,10 @@
+{
+  "name": "comunidauto-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm -C client dev\" \"pnpm -C server dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

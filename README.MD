@@ -23,10 +23,6 @@ cd challenge-comunidauto
 
 2. Instalar dependencias:
 ```bash
-cd /client
-pnpm install
-
-cd /server
 pnpm install
 ```
 
@@ -65,17 +61,9 @@ challenge-comunidauto/
 ## Uso
 
 1. Iniciar el servidor:
-Abrir 2 terminales y ejecutar los siguientes comandos:
+Abrir una terminal y ejecutar el siguiente comando:
 
 ```bash
-Terminal 1:
-cd /client
-pnpm run dev
-```
-
-```bash
-Terminal 2:
-cd /server
 pnpm run dev
 ```
 
